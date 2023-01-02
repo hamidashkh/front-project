@@ -53,7 +53,7 @@ const AdminHome = () => {
                                     await axios.delete(`http://localhost:8000/data/${user.id}`)
                                         getUsers();}}
                                 className='btn btn-danger'><RiDeleteBin2Fill /> Delete</button>
-                             <Link to='/edit' className='btn btn-warning ms-2'><RiDeleteBin2Fill /> Edit</Link>
+                             <Link to={`/edit/${user.id}`} className='btn btn-warning ms-2'><RiDeleteBin2Fill /> Edit</Link>
                             </td>
                             </tr>
                         )

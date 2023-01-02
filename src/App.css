@@ -1,17 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@700&display=swap');
+
 header{
-  background-color: plum;
+  background-color: #F5EBDA;
   padding: 20px 4rem;
 }
 header a{
   text-decoration: none;
-  color: #fff;
+  color: #911924;
   font-weight: bold;
 }
 .left a{
-  font-size: 24px;
+  font-size: 34px;
+  font-family: 'Cormorant Upright', serif;
 }
 .right a{
-  margin-left: 30px
+  font-size: 20px;
+  margin-left: 30px;
+  font-family: 'Cormorant Upright', serif;
 }
 .pp{
   width: 5%;
@@ -95,7 +100,7 @@ input[type="submit"]:hover {
 }
 .box{
   
- border: 3px solid pink;
+ border: 3px solid #911924;
  border-radius: 10px;
  padding: 1rem;
 }

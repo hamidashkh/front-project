@@ -8,6 +8,8 @@ import ClimbingBoxLoader  from "react-spinners/ClimbingBoxLoader";
 import Admin from './pages/Admin';
 import ProfileCard from './components/ProfileCard';
 import AddUser from './pages/AddUser';
+import EditUser from './components/EditUser';
+import AdminHome from './pages/AdminHome';
 
 const override = {
   display: "block",
@@ -48,8 +50,10 @@ function App() {
       /> : <Routes>
       <Route path='/' element={<Home userList={users} />}/>
       <Route path='/admin' element={<Admin/>}/>
+      <Route path='/adminhome' element={<AdminHome/>}/>
       <Route path='/details/:userId' element={<ProfileCard/>}/>
       <Route path='/adduser' element={<AddUser/>}/>
+      <Route path='/edit/:id' element={<EditUser/>}/>
     </Routes>
       }
         
